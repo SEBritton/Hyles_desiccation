@@ -93,7 +93,6 @@ osmo_2 <- ggplot(desiccation_clean, aes(x=before_mass, y=delta_osmo)) +
   xlab("Body mass (g)") + ylab("Osmolality change")
 osmo_2
 
-
 ##Statistics
 
 #Summary stats
@@ -248,8 +247,6 @@ sem_model_3 <- psem(
   lm(avg_reading ~ treatment_binary + area_G, vapo_data, na.action=na.omit)
 )
 summary(sem_model_3)
-
-
 
 
 
